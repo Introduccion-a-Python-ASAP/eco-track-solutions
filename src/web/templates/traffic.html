@@ -1,0 +1,35 @@
+{% extends 'layout.html' %} 
+{% block title %}Traffic Status{% endblock title %} 
+{% block head %} {{super()}} {% endblock head %}
+{% block content %}
+
+<div class="container">
+  <h1 class="mt-4">Traffic Data for {{ segment.metadata.name }}</h1>
+  <h2 class="mb-4">City: {{ segment.metadata.state | capitalize }}</h2>
+
+  <h3>Hourly Traffic Data</h3>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Day/Hour</th>
+          {% for hour in segment.metadata.columns %}
+          <th>{{ hour }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(0, segment.metadata.rows|length) %}
+        <tr>
+          <td>{{ segment.metadata.rows[i] }}</td>
+          {% for j in range(0, segment.data[i]|length) %}
+          <td>{{ segment.data[i][j] }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}

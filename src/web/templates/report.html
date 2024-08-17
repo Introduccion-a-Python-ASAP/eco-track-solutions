@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} {% block title %}Reports{% endblock title %} {%
+block head %} {{super()}} {% endblock head %} {% block content %}
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+</style>
+
+<section>
+  <h2>{{report_name}}</h2>
+  <div id="plotly-chart">
+    {{ plot_div | safe }}
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,309 @@
+{% extends 'layout.html' %} {% block title %}Dashboard{% endblock title %} {% block
+head %} {{super()}} {% endblock head %} {% block content %}
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+
+<div class="grey-bg container-fluid p-5">
+  <section id="minimal-statistics">
+    <div class="row">
+      <div class="col-12 mt-3 mb-1">
+        <h4 class="text-uppercase">EcoTrack Solutions</h4>
+        <p>Dashboard</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="icon-section">
+                  <i class="icon-pencil text-primary fs-1"></i>
+                </div>
+                <div class="text-end ms-auto">
+                  <h3>278</h3>
+                  <span>Reports Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="icon-section">
+                  <i class="icon-speech text-warning fs-1"></i>
+                </div>
+                <div class="text-end ms-auto">
+                  <h3>156</h3>
+                  <span>Information</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="icon-section">
+                  <i class="icon-graph text-success fs-1"></i>
+                </div>
+                <div class="text-end ms-auto">
+                  <h3>64.89 %</h3>
+                  <span>PM2.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="icon-section">
+                  <i class="icon-pointer text-danger fs-1"></i>
+                </div>
+                <div class="text-end ms-auto">
+                  <h3>423</h3>
+                  <span>Traffic Jam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-danger">278</h3>
+                  <span>Contamination Alerts</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-rocket text-danger fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-success">156</h3>
+                  <span>New Clients</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-user text-success fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-sm-6 col-12">
+        <a href="/api/humidity-report">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="text-start">
+                    <h3 class="text-warning">64.89 %</h3>
+                    <span>Humidity</span>
+                  </div>
+                  <div class="icon-section ms-auto">
+                    <i class="icon-pie-chart text-warning fs-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-primary">423</h3>
+                  <span>Problems Detected</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-support text-primary fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-primary">278</h3>
+                  <span>Reports Viewed</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-book-open text-primary fs-1"></i>
+                </div>
+              </div>
+              <div class="progress mt-1 mb-0" style="height: 7px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-warning">156</h3>
+                  <span>Opinions</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-bubbles text-warning fs-1"></i>
+                </div>
+              </div>
+              <div class="progress mt-1 mb-0" style="height: 7px">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 35%"
+                  aria-valuenow="35"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-sm-6 col-12">
+        <a href="/api/temperature-report">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="text-start">
+                    <h3 class="text-success">64.89 %</h3>
+                    <span>Temperature</span>
+                  </div>
+                  <div class="icon-section ms-auto">
+                    <i class="icon-cup text-success fs-1"></i>
+                  </div>
+                </div>
+                <div class="progress mt-1 mb-0" style="height: 7px">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="text-start">
+                  <h3 class="text-danger">423</h3>
+                  <span>New Features</span>
+                </div>
+                <div class="icon-section ms-auto">
+                  <i class="icon-direction text-danger fs-1"></i>
+                </div>
+              </div>
+              <div class="progress mt-1 mb-0" style="height: 7px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 40%"
+                  aria-valuenow="40"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock content %}
