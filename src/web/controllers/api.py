@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, render_template, render_template_string
+from flask import Blueprint, jsonify, render_template
 import requests
 import plotly.express as px
 import pandas as pd

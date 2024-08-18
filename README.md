@@ -103,7 +103,12 @@ Podes acceder a la aplicacion utilizando el siguient enlace:
 
  [![Python]][Python-url]
  [![Html]][Html-url]
-
+ [![Flask]][Flask-url]
+![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=for-the-badge)
+![Jinja Badge](https://img.shields.io/badge/Jinja-B41717?logo=jinja&logoColor=fff&style=for-the-badge)
+![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=for-the-badge)
+![Plotly Badge](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=fff&style=for-the-badge)
+![pandas Badge](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=for-the-badge)
 
 
 <!-- CONTACT -->
@@ -132,7 +137,7 @@ Santiago dos Santos - [@santidossantos](https://github.com/santidossantos/) - sa
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/santiago-dos-santos/
 [product-screenshot]: images/screenshot.png
 
 [Python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
@@ -140,3 +145,8 @@ Santiago dos Santos - [@santidossantos](https://github.com/santidossantos/) - sa
 
 [Html]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [Html-url]: https://html5.org/
+
+
+[Flask]: https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=for-the-badge
+[Flask-url]: https://flask.palletsprojects.com/en/3.0.x/
+
