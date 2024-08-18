@@ -13,7 +13,7 @@ def reports():
 
 @api_blueprint.get("humidity-report")
 def humidity_report():
-    df = pd.read_csv('/home/santiago/Projects/eco-track-solutions/src/sensors_data.csv')
+    df = pd.read_csv('/Users/santiago/Projects/eco-track-solutions/src/sensors_data.csv')
     
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     
@@ -34,7 +34,7 @@ def humidity_report():
 
 @api_blueprint.get("/temperature-report")
 def temperature_report():
-    df = pd.read_csv('/home/santiago/Projects/eco-track-solutions/src/sensors_data.csv')
+    df = pd.read_csv('/Users/santiago/Projects/eco-track-solutions/src/sensors_data.csv')
     
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     
